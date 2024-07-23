@@ -36,7 +36,7 @@ const accountSlice = createSlice({
     name : "",
     email : "",
     phone : "",
-    date : ""
+    date : (new Date()).toISOString().substring(0, 10)
   },
   reducers: {
     updateAccountInfo(state, action) {

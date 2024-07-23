@@ -12,11 +12,10 @@ function AccountContent() {
     name: { value: "", readOnly: true },
     email: { value: "", readOnly: true },
     phone: { value: "", readOnly: true },
-    date: { value: "", readOnly: true },
+    date: { value: (new Date()).toISOString().substring(0, 10), readOnly: true },
   });
 
   useEffect(() => {
-    console.log(accounts);
     setFormData({
       name: { value: accounts.name, readOnly: true },
       email: { value: accounts.email, readOnly: true },
@@ -177,7 +176,7 @@ function AccountContent() {
           onClick={() =>
             setFormData({
               ...formData,
-              dob: {
+              date: {
                 ...formData.date,
                 readOnly: !formData.date.readOnly,
               },
@@ -191,14 +190,15 @@ function AccountContent() {
           </button>
           <button
             className="accountButton cancel"
-            onClick={() =>
+            onClick={(e) => {
+              e.preventDefault();
               setFormData({
                 name: { value: accounts.name, readOnly: true },
                 email: { value: accounts.email, readOnly: true },
                 phone: { value: accounts.phone, readOnly: true },
                 date: { value: accounts.date, readOnly: true },
-              })
-            }
+              });
+            }}
           >
             Cancel
           </button>
