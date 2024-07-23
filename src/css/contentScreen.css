@@ -1,0 +1,162 @@
+.contentScreen {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
+  max-height: 91vh;
+  /* overflow-y: scroll; */
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  background-color: rgb(217, 189, 223);
+  flex-basis: 30px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-top: 1px solid rgb(154, 84, 162);
+  border-right: 1px solid rgb(154, 84, 162);
+  border-bottom: 1px solid rgb(154, 84, 162);
+  /* margin-left: -1px; */
+}
+
+.searchInputParent {
+  width: 175px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.searchInput {
+  width: 120px;
+  border: 1px solid rgb(154, 84, 162);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 18px;
+  font-size: 10px;
+  text-indent: 3px;
+}
+
+.searchInput:focus-visible {
+  border: 1px solid rgb(154, 84, 162);
+  outline: 0px;
+}
+
+.searchIcon {
+  color : rgb(154, 84, 162);
+}
+
+.searchIconParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(154, 84, 162);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 5px;
+  width: 11px;
+  height: 10px;
+  margin-left: -1px;
+}
+
+.searchIconParent:hover {
+  background-color:  rgb(154, 84, 162);
+}
+
+.searchIconParent:hover .searchIcon {
+  color: #ffffff;
+}
+
+.customerContent {
+  flex-grow: 1;
+  /* overflow-y: scroll; */
+  margin: 10px 5px;
+}
+
+table, th, td {
+  border : 1px solid rgb(154, 84, 162);
+  /* border-collapse: collapse; */
+  border-spacing: 0;
+}
+
+.cTable {
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+.activeRow {
+  background-color: rgb(217, 189, 223) !important;
+}
+
+.logout {
+  width: 70px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid rgb(154, 84, 162);
+  border-radius: 5px;
+}
+
+.logout:hover {
+  background-color: rgb(154, 84, 162);
+  color: #ffffff;
+}
+
+.accountForm {
+  margin : 10px;
+}
+
+.accountInput {
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.pencil {
+  margin-left: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(154, 84, 162);
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.pencil:hover {
+  background-color: rgb(154, 84, 162);
+  color: #ffffff;
+}
+
+.active {
+  background-color: rgb(154, 84, 162);
+  color: #ffffff;
+}
+
+.accountButton {
+  margin: 0px 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.save {
+  border: 1px solid rgb(93, 207, 81);
+}
+
+.cancel {
+  border: 1px solid rgb(207, 81, 81);
+}
+
+.save:hover {
+  background-color: rgb(93, 207, 81);
+  color: #ffffff;
+}
+
+.cancel:hover {
+  background-color: rgb(207, 81, 81);
+  color: #ffffff;
+}
+
